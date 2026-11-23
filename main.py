@@ -1,7 +1,7 @@
 print("Welcome to USTUN ZEKA AI")
 print("Version 0.1.0")
-print("AI Development Started!")def get_user_message():
-    message = input("You: ")
+print("AI Development Started!")
+def get_user_message():   message = input("You: ")
     return message
 def main():
     ai = UstunZeka()
@@ -27,7 +27,7 @@ def generate_response(self, message):
 
     else:
         return "I am still learning. Please try another question."
-        def generate_response(self, message):
+        def  , message):
     message = message.lower()
 
     if "hello" in message or "hi" in message:
@@ -59,4 +59,12 @@ def main():
         response = ai.generate_response(message)
         print("AI:", response)
       if __name__ == "__main__":
-    main()
+main()
+print ( "Remember conversation ") 
+conversation_history = []
+
+def remember_conversation(user_message, ai_response):
+    conversation_history.append({
+        "user": user_message,
+        "ai": ai_response
+    })
