@@ -44,3 +44,19 @@ def generate_response(self, message):
 
     else:
         return "I am still learning. Please try another question."
+def main():
+    ai = UstunZeka()
+
+    print("Welcome to USTUN ZEKA AI")
+
+    while True:
+        message = get_user_message()
+
+        if message.lower() == "exit":
+            print("Goodbye!")
+            break
+
+        response = ai.generate_response(message)
+        print("AI:", response)
+      if __name__ == "__main__":
+    main()
