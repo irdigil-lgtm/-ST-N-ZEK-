@@ -68,3 +68,11 @@ def remember_conversation(user_message, ai_response):
         "user": user_message,
         "ai": ai_response
     })
+def show_conversation_history():
+    if not conversation_history:
+        print("No conversation history yet.")
+
+    else:
+        for conversation in conversation_history:
+            print("You:", conversation["user"])
+            print("AI:", conversation["ai"])
